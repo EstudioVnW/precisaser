@@ -7,15 +7,25 @@
 	<title>Precisa Ser</title>
 </head>
 <body>
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
 	<header class="cabecalho">
 		<div class="cabecalho-gradiente"></div>
 		<nav class="cabecalho-menu">
-			<img class="cabecalhoMenu-logo" src="assets/logo menu.svg">
-			<a class="cabecalhoMenu-item" href="SOBRE NÓS">SOBRE NÓS</a>
-			<a class="cabecalhoMenu-item" href="SOCIAL">SOCIAL</a>
-			<a class="cabecalhoMenu-item" href="PARCEIROS">PARCEIROS</a>
+			<a href="#Inicio"><img class="cabecalhoMenu-logo" src="assets/logo menu.svg"></a>
+			<a class="cabecalhoMenu-item" href="#SobreNos">SOBRE NÓS</a>
+			<a class="cabecalhoMenu-item" href="#Social">SOCIAL</a>
+			<a class="cabecalhoMenu-item" href="#Parceiros">PARCEIROS</a>
 		</nav>
 		<section class="cabecalho-hero">
+			<a name="Inicio"></a>
 			<div class="cabecalhoHero-gradiente"></div>
 			<h1 class="cabecalhoHero-titulo">
 				Uma plataforma de inovação social para conscientização, diálogo e ação coletiva.
@@ -43,6 +53,7 @@
 				<a class="cabecalhoDestaquesCaixa-link" target="_blank" href="">Novo ciclo do #vainaweb Complexo do Alemão conta com 	palestra de Igor Couto.</a>
 			</div>
 		</section>
+		<a name="SobreNos"></a>
 	</header>
 	<main class="conteudo">
 		<section class="conteudo-sobre">
@@ -55,6 +66,7 @@
 				A tecnologia move o mundo. Existimos para colocá-la a disposição das reais necessidades da sociedade, trazendo a força e a independência que as tecnologias social e digital são capazes de desenvolver no ser humano. Habilidades humanas que, com tecnologia de ponta que deixam de ser limitada a poucos e passa a ganhar visibilidade no contexto social das populações em situação de vulnerabilidades e risco social.
 			</p>
 			</div>
+			<a name="Social"></a>
 			<div class="boleado boleado-sobre"></div>
 		</section>
 		<section class="conteudo-acoes acoesVnw">
@@ -105,11 +117,12 @@
 				</section>
 			</div>
 			<div class="boleado boleado-startupin"></div>
+			<a name="Parceiros"></a>
 		</section>
 		<section class="conteudo-parceiros">
 			<h2 class="conteudoParceiros-titulo" >PROJETOS PARCEIROS</h2>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros1 pontinho.svg">
+				<img class="conteudoParceirosItem-img logoPontinho" src="assets/parceiros1 pontinho.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo" >Pontinho de Luz</h3>
 					<p class="conteudoParceirosItem-texto">Uma rede de solidariedade e amor ao próximo através da prática da gentileza. Seja um pontinho de luz!
@@ -117,7 +130,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros2 recicla.svg">
+				<img class="conteudoParceirosItem-img logoRecicla" src="assets/parceiros2 recicla.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">Reciclação</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -126,7 +139,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros3 esperanca.svg">
+				<img class="conteudoParceirosItem-img logoEsperanca" src="assets/parceiros3 esperanca.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">Há Esperança</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -135,7 +148,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros4 alimentacao.svg">
+				<img class="conteudoParceirosItem-img logoAlimentacao" src="assets/parceiros4 alimentacao.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">Alimentando Vidas</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -144,7 +157,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros5 sopa.svg">
+				<img class="conteudoParceirosItem-img logoSopa" src="assets/parceiros5 sopa.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">Turma da sopa</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -153,7 +166,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros6 agir.svg">
+				<img class="conteudoParceirosItem-img logoAgir" src="assets/parceiros6 agir.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">Centro Social Agir</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -162,7 +175,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros7 musica.svg">
+				<img class="conteudoParceirosItem-img logoMusica" src="assets/parceiros7 musica.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">Através da Música</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -171,7 +184,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros8 educap.svg">
+				<img class="conteudoParceirosItem-img logoEducap" src="assets/parceiros8 educap.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">Educap</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -180,7 +193,7 @@
 				</div>
 			</div>
 			<div class="conteudoParceiros-item">
-				<img class="conteudoParceirosItem-img" src="assets/parceiros9 osc.svg">
+				<img class="conteudoParceirosItem-img logoOsc" src="assets/parceiros9 osc.svg">
 				<div class="conteudoParceirosItem-descricao">
 					<h3 class="conteudoParceirosItem-titulo">OSC Legal</h3>
 					<p class="conteudoParceirosItem-texto">
@@ -200,21 +213,8 @@
 				</p>
 			</div>
 			<div>@ 2018 ESTÚDIO VAI NA WEB</div>
-			<script>
-				<div class="ropape-plugin">
-					<div id="fb-root"></div>
-					<script>(function(d, s, id) {
-	  				var js, fjs = d.getElementsByTagName(s)[0];
-	  				if (d.getElementById(id)) return;
-	  				js = d.createElement(s); js.id = id;
-	  				js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12';
-	  				fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));</script>
-
-
-					<div class="fb-page" data-href="https://www.facebook.com/precisaser/" data-tabs="timeline" data-width="329" data-height="207" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/precisaser/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/precisaser/">PrecisaSer</a></blockquote></div>
-				</div>
-			</script>
+			
+			<div class="fb-page" data-href="https://www.facebook.com/precisaser/" data-tabs="timeline" data-width="329px" data-height="207px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/precisaser/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/precisaser/">PrecisaSer</a></blockquote></div>
 		</footer>
 	</main>
 </body>
