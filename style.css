@@ -352,16 +352,9 @@ a:hover{
 .conteudoParceirosItem-texto{
 	width: 100%;
 	height: 45px;
-	margin-top:10px;
+	margin-top: 10px;
 	font-family: RobotoLight;
 	font-size: 14px;
 	color: #333;
 	text-align: left;
-}
-
-
-
-.fb-page{
-	width: 329px;
-	height: 207px;
 }
