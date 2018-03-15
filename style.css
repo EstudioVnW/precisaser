@@ -68,6 +68,7 @@
 }
 .cabecalhoMenu-item:focus{
 	text-decoration: underline;
+	color: #3DB5B0;
 }
 a:hover{
 	text-decoration: underline;
@@ -357,4 +358,11 @@ a:hover{
 	font-size: 14px;
 	color: #333;
 	text-align: left;
+}
+
+
+
+.fb-page{
+	width: 329px;
+	height: 207px;
 }
