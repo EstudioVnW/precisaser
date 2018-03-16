@@ -69,10 +69,10 @@
 				</p>
 			</div>
 			<div class="conteudoAcoes-caixa">
-				<img class="conteudoAcoesCaixa-img" src="assets/Startupin2.jpg">
+				<img id="img1" class="conteudoAcoesCaixa-img" src="assets/Startupin2.jpg">
 				<section class="conteudoAcoesCaixa-box">
-					<img class="conteudoAcoesCaixaBox-img" src="assets/Startupin3.jpg">
-					<img class="conteudoAcoesCaixaBox-img" src="assets/Startupin2.jpg">
+					<img id="img2" class="conteudoAcoesCaixaBox-img" src="assets/Startupin3.jpg">
+					<img id="img3" class="conteudoAcoesCaixaBox-img caixaBox-imagem2" src="assets/Startupin2.jpg">
 				</section>
 			</div>
 			<div class="boleado boleado-projetos"></div>
@@ -85,10 +85,10 @@
 				</p>
 			</div>	
 			<div class="conteudoAcoes-caixa">
-				<img class="conteudoAcoesCaixa-img" src="assets/estudio.jpg">
+				<img id="img4" class="conteudoAcoesCaixa-img" src="assets/estudio.jpg">
 				<section class="conteudoAcoesCaixa-box">
-					<img class="conteudoAcoesCaixaBox-img" src="assets/estudio1.jpg">
-					<img class="conteudoAcoesCaixaBox-img" src="assets/estudio2.jpg">
+					<img id="img5" class="conteudoAcoesCaixaBox-img" src="assets/estudio1.jpg">
+					<img id="img6" class="conteudoAcoesCaixaBox-img" src="assets/estudio2.jpg">
 				</section>
 			</div>
 			<div class="boleado boleado-vnw"></div>
@@ -101,10 +101,10 @@
 				</p>
 			</div>	
 			<div class="conteudoAcoes-caixa">
-				<img class="conteudoAcoesCaixa-img" src="assets/Startupin2.jpg">
+				<img id="img7" class="conteudoAcoesCaixa-img" src="assets/Startupin2.jpg">
 				<section class="conteudoAcoesCaixa-box">
-					<img class="conteudoAcoesCaixaBox-img" src="assets/Startupin3.jpg">
-					<img class="conteudoAcoesCaixaBox-img" src="assets/Startupin2.jpg">
+					<img id="img8" class="conteudoAcoesCaixaBox-img" src="assets/Startupin3.jpg">
+					<img id="img9" class="conteudoAcoesCaixaBox-img" src="assets/Startupin2.jpg">
 				</section>
 			</div>
 			<div class="boleado boleado-startupin"></div>
@@ -195,17 +195,50 @@
 		</section>
 		<footer class="rodape">
 			<div class="rodape-caixa">
-				<h3 class="rodapeCaixa-titulo">contato</h3>
-				<p class="rodapeCaixa-texto">
-					telefone: (21)98888-1234<br>
-					email: estudio@vainaweb.com.br<br>
-					Endereço: Morro dos Prazeres, Sta Teraza<br>
-					Rio de Janeiro, RJ - cep: 20.000-000<br>
-				</p>
+				<div class="rodapeCaixa-descricao">
+					<h3 class="rodapeCaixaDescricao-titulo">Contato</h3>
+					<p class="rodapeCaixaDescricao-texto">
+						Telefone: (21)98888-1234<br>
+						E-mail: estudio@vainaweb.com.br<br>
+						Endereço: Morro dos Prazeres, Sta Teraza<br>
+						Rio de Janeiro, RJ - cep: 20.000-000<br>
+					</p>
+				</div>
+				<div class="fb-page"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprecisaser&tabs=timeline&width=329px&height=207px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="329px" height="207px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
 			</div>
-			<iframe class="fb-page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprecisaser&tabs=timeline&width=329px&height=207px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="329px" height="207px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-			<div>@ 2018 ESTÚDIO VAI NA WEB</div>
 		</footer>
 	</main>
+	<div class="rodapeGradiente">@ 2018 ESTÚDIO VAI NA WEB</div>
+
+
+	<img id="myImg" src="assets/estudio.jpg" width="300" height="200">
+	<div id="myModal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content" id="img01">
+	<div id="caption"></div>
+	</div>
+
+	<script>
+		var modal = document.getElementById('myModal');
+
+		var img = document.getElementById('img1');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	</script>
+
+
+
+
 </body>
 </html>
