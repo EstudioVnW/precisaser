@@ -663,13 +663,13 @@ a:hover{
 .rodapeCaixaDescricao-titulo{
 	width: 100%;
 	height: 46px;
-	font-family: robotoMedium;
+	font-family: RobotoMedium;
 	font-size: 24px;
 }
 .rodapeCaixaDescricao-texto{
 	width: 100%;
 	height: 127px;
-	font-family: robotoLight;
+	font-family: RobotoLight;
 	font-size: 16px;
 }
 .fb-page{
@@ -681,6 +681,7 @@ a:hover{
 	height: 20px;
 	text-align: center;
 	color: #fff;
+	font-family: RobotoMedium;
 	background: linear-gradient(to right, #85CFE8, #3DB5B0, #F6A800, #EC7404, #E30059);
 }
 #myImg {
