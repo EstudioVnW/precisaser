@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+a:hover{
+	text-decoration: underline;
+}
+
 @font-face {
     font-family: Fengardo_Neue;
     src: url(fonts/FengardoNeue_Black.otf);
@@ -33,15 +37,17 @@
 
 .cabecalho{
 	width: 100%;
-	height: 958px;
+/*	height: 958px;*/
+	min-height: 100vh;
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.cabecalho{
 		min-height: 2485px;
 	}
-}
+}*/
 .cabecalho-gradiente{
-	width: 100%;
+	/*width: 100%;*/
+	width: 100vw;
 	height: 20px;
 	position: fixed;
 	z-index: 8;
@@ -85,9 +91,7 @@
 	text-decoration: underline;
 	color: #3DB5B0;
 }
-a:hover{
-	text-decoration: underline;
-}
+
 .cabecalho-hero{
 	width: 100%;
 	height: 480px;
@@ -163,15 +167,16 @@ a:hover{
 	background-color: #fff;
 	border-radius: 10px;
 	display: flex;
-	flex-flow: column wrap;
+	/*flex-flow: column wrap;*/
+	flex-direction: column;
 	align-items: center;
 	box-shadow: 4px 4px 20px #333;
 }
 @media (max-width: 640px){
 	.cabecalhoDestaques-caixa{
-		width: 90%;
+		/*width: 90%;*/
+		width: 90vw;
 		min-height: 400px;
-		flex-wrap: nowrap;
 	}
 }
 .cabecalhoDestaquesCaixa-img{
@@ -215,9 +220,18 @@ a:hover{
 		min-height: 1000px;
 	}
 }
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1400px;
+}
+
 .conteudo-sobre{
 	width: 100%;
-	height: 535px;
+/*	height: 535px;*/
+    height: 58vh;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -225,10 +239,31 @@ a:hover{
 }
 @media (max-width: 640px){
 	.conteudo-sobre{
-		min-height: 550px;
+		/*min-height: 550px;*/
 		flex-flow: column nowrap;
 		align-items: center;
 		justify-content: center;
+	}
+}
+.conteudo-sobre::after {
+	content: 'Nossos Projetos';
+	width: 100vw;
+	height: 7vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	background-color: #fff;
+	border-radius: 0 0 100% 100%;
+	color: #3DB5B0;
+	font-family: Fengardo_Neue;
+	font-size: 36px;
+}
+
+@media (max-width: 640px){
+	.conteudoAcoes-titulo{
+		height: 50px;
+		font-size: 28px;
 	}
 }
 .conteudoSobre-caixaLogo{
@@ -303,7 +338,7 @@ a:hover{
 		width: 100%;
 	}
 }
-.boleado{
+/*.boleado{
 	width: 100%;
 	height: 7vh;
 	margin-top: -23px;
@@ -321,7 +356,7 @@ a:hover{
 	.boleado{
 		margin-bottom: -35px;
 	}
-}
+}*/
 .boleado-sobre{
 	background: #fff;
 	display: flex;
@@ -329,16 +364,17 @@ a:hover{
 	align-items: center;	
 }
 .conteudo-acoes{
-	width: 100%;
-	height: 535px;
+	width: 100vw;
+	height: 70vh;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	/*flex-flow: row wrap;*/
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 @media (max-width: 640px){
 	.conteudo-acoes{
-		min-height: 1800px;
+		/*min-height: 1800px;*/
 		flex-flow: column wrap;
 		justify-content: center;
 	}
@@ -352,7 +388,7 @@ a:hover{
 .acoesVnw{
 	background: #F6A800;
 }
-.conteudoAcoes-titulo{
+/*.conteudoAcoes-titulo{
 	width: 100%;
 	height: 45px;
 	font-family: Fengardo_Neue;
@@ -365,14 +401,14 @@ a:hover{
 		height: 50px;
 		font-size: 28px;
 	}
-}
+}*/
 .conteudoAcoes-bloco{
 	width: 30%;
 	height: 500px;
 	padding: 1%;
 	margin: 0 2%;
 	display: flex;
-	flex-flow: column wrap;
+	flex-direction: column;
 	justify-content:space-around;
 	align-items: center;
 }
@@ -399,7 +435,7 @@ a:hover{
 	color: #85CFE8;
 	text-decoration: none;
 }
-.boleado-projetos{
+/*.boleado-projetos{
 	margin-bottom: -40px;
 	background-color: #F6A800;
 }
@@ -412,8 +448,8 @@ a:hover{
 	.boleado-projetos{
 		margin-bottom: -30%;
 	}
-}
-.boleado-vnw{
+}*/
+/*.boleado-vnw{
 	margin-top:12px;
 	background-color: #EC7404;
 }
@@ -426,12 +462,13 @@ a:hover{
 	.boleado-vnw{
 		margin-bottom: -20%;
 	}
-}
+}*/
 .conteudoAcoes-caixa{
-	width: 54%;
+	width: 40vw;
 	max-width: 830px;
-	height: 60%;
+	height: 60vh;
 	max-height: 400px;
+	padding: 0.5rem;
 	margin-right: 3%;
 	display: flex;
 	flex-flow: row wrap;
@@ -489,10 +526,10 @@ a:hover{
 		z-index: 0;
 	}
 }
-.boleado-startupin{
+/*.boleado-startupin{
 	margin-top: 13px;
 	background-color: #E30059;
-}
+}*/
 @media (max-width: 640px){
 	.boleado-startupin{
 		margin-bottom: -13%;
@@ -505,7 +542,8 @@ a:hover{
 }
 .conteudo-parceiros{
 	width: 100%;
-	height: 700px;
+	/*height: 700px;*/
+	height: 80vh;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -513,7 +551,8 @@ a:hover{
 }
 @media (max-width: 640px){
 	.conteudo-parceiros{
-		min-height: 1600px;
+		/*min-height: 1600px;*/
+		min-height: 85vh;
 		padding: 3% 0;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -529,7 +568,8 @@ a:hover{
 .conteudoParceiros-titulo{
 	width: 100%;
 	height: 45px;
-	margin-top:10px;
+	/*margin-top:10px;*/
+	margin-top: 2rem;
 	font-family: Fengardo_Neue;
 	font-size: 36px;
 	color: #3DB5B0;
@@ -613,7 +653,8 @@ a:hover{
 }
 .rodape{
 	width: 100%;
-	height: 757px;
+	/*height: 757px;*/
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
