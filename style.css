@@ -5,7 +5,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+body{
+	overflow-x: hidden;
+}
 a:hover{
 	text-decoration: underline;
 }
@@ -36,19 +38,20 @@ a:hover{
 }
 
 .container {
-	width: 100vw;
+	/*width: 100vw;*/
 	max-width: 1400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: solid 3px green;
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.container{
 		flex-direction: column;
 	}
-}
+}*/
 .cabecalho{
-	width: 100vw;
+	/*width: 100vw;*/
 	min-height: 100vh;
 }
 .cabecalho-gradiente{
@@ -73,12 +76,12 @@ a:hover{
 	width: 150px;
 	margin-right: 60px; 
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.cabecalhoMenu-logo{
 		width: 250px;
 		margin: 0;
 	}
-}
+}*/
 .cabecalhoMenu-item{
 	margin: 20px;
 	font-family: Fengardo_Neue;
@@ -97,30 +100,30 @@ a:hover{
 	color: #3DB5B0;
 }
 .cabecalho-hero{
-	width: 100vw;
-	height: 100vh;
+	/*width: 100vw;*/
+	min-height: 75vh;
 	background: url("assets/fundo header.jpg") top;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.cabecalho-hero{
 		min-height: 667px;
 	}
-}
+}*/
 .cabecalhoHero-gradiente{
 	width: 100vw;
-	height: 100vh;
+	min-height: 75vh;
 	background: linear-gradient(to bottom, rgba(133,207,232,0.3), #3DB5B0);
 	position: relative;
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.cabecalhoHero-gradiente{
 		min-height: 667px;
 	}
-}
+}*/
 .cabecalhoHero-titulo{
 	width: 50vw;
 	height: 20vh;
@@ -132,32 +135,32 @@ a:hover{
 @media (max-width: 640px){
 	.cabecalhoHero-titulo{
 		width: 80vw;
-		font-size: 33px;
+		font-size: 26px;
 	}
 }
-@media (max-width: 375px){
+/*@media (max-width: 375px){
 	.cabecalhoHero-titulo{
 		font-size: 22px;
 	}
-}
-.cabecalho-destaques{
-	width: 100vw;
-	height: 80vh;
-	padding: 0 25px;
-	background: #3DB5B0;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
+}*/
 .container-destaques{
 	flex-direction: column;
 }
-@media (max-width: 640px){
+.cabecalho-destaques{
+	/*width: 100vw;*/
+	min-height: 80vh;
+	padding: 0 25px;
+	background: #3DB5B0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*@media (max-width: 640px){
 	.cabecalho-destaques{
 		min-height: 1820px;
 		align-items: center;
 	}
-}
+}*/
 .cabecalhoDestaques-titulo{
 	width: 90vw;
 	font-family: Fengardo_Neue;
@@ -203,54 +206,54 @@ a:hover{
 	}
 }
 .conteudo{
-	width: 100vw;
-	min-height: 500px;
+	/*width: 100vw;*/
+	min-height: 100vh;
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.conteudo{
 		min-height: 1000px;
 	}
-}
+}*/
 
 /*Section Sobre*/
 
 .conteudo-sobre{
-	width: 100vw;
-    min-height: 85vh;
+	/*width: 100vw;*/
+    min-height: 80vh;
     padding: 4% 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.conteudo-sobre{
 		min-height: 85vh;
 		align-items: center;
 		justify-content: center;
 	}
-}
+}*/
 .conteudoSobre-caixaLogo{
 	width: 40vw;
 	margin-right: 4%;
-	display: flex;
+	/*display: flex;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: center;*/
 }
 @media (max-width: 640px){
 	.conteudoSobre-caixaLogo{
 		width: 90vw;
-		margin-bottom: 6%;
-		justify-content: center;
+		margin-bottom: 6%;/*
+		justify-content: center;*/
 	}
 }
 .conteudoSobre-logo{
 	width: 35vw;
 }
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 	.conteudoSobre-logo{
 		width: 60vw;
 	}
-}
+}*/
 .conteudoSobre-caixaTexto{
 	width: 50vw;
 	display: flex;
@@ -295,11 +298,11 @@ a:hover{
 /*Section Ações*/
 
 .container-acoes{
-	height: 83vh;
+	min-height: 83vh;
 }
 .conteudo-acoes{
 	width: 100vw;
-	height: 90vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -308,7 +311,7 @@ a:hover{
 .conteudo-acoes::before{
 	content: 'Nossos Projetos';
 	width: 100vw;
-	height: 7vh;
+	min-height: 7vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
