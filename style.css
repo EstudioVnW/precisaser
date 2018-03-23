@@ -263,14 +263,14 @@ a:hover{
 }
 @media (max-width: 640px){
 	.conteudoSobre-caixaTexto{
-		width: 75vw;
+		width: 77vw;
 	}
 }
-@media (max-width: 375px){
+/*@media (max-width: 375px){
 	.conteudoSobre-caixaTexto{
 		width: 80vw;
 	}
-}
+}*/
 .conteudoSobre-titulo{
 	width: 50vw;
 	margin-bottom: 2%;
