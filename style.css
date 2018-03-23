@@ -40,12 +40,12 @@ body {
 }
 
 .container {
+	width: 90vw;
 	max-width: 1400px;
 	min-height: 75vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 3px solid green;
 }
 @media (max-width: 640px){
 	.container{
@@ -148,6 +148,12 @@ body {
 		font-size: 22px;
 	}
 }*/
+.cabecalho-destaques .container{
+	flex-direction: column;
+}
+.cabecalho-destaques .container .container{
+	flex-flow: row wrap;
+}
 .cabecalho-destaques{
 	/*width: 100vw;*/
 	min-height: 80vh;
@@ -174,7 +180,7 @@ body {
 	text-transform: uppercase;
 }
 .cabecalhoDestaques-caixa{
-	width: 21vw;
+	width: 20vw;
 	min-height: 57vh;
 	margin: 1%;
 	background-color: #fff;
@@ -182,7 +188,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	box-shadow: 4px 4px 20px #333;
+	box-shadow: 4px 4px 20px rgba(51,51,51, 0.3) ;
 }
 @media (max-width: 640px){
 	.cabecalhoDestaques-caixa{
@@ -349,7 +355,7 @@ body {
 }
 .conteudoAcoes-logo{
 	width: 20vw;
-	margin-bottom: 5%;
+	margin: 5% 0;
 }
 @media (max-width: 640px){
 	.conteudoAcoes-logo{
@@ -362,14 +368,19 @@ body {
 	font-size: 16px;
 	color: #fff;
 }
+@media (max-width: 640px){
+	.conteudoAcoes-texto{
+		width: 70vw;
+	}
+}
 .conteudoAcoesTexto-link{
 	color: #85CFE8;
 	text-decoration: none;
 }
 .conteudoAcoes-caixa{
-	width: 55vw;
+	width: 60vw;
 	max-width: 820px;
-	min-height: 50vh;
+	min-height: 48vh;
 	max-height: 400px;
 	padding: 0.5rem;
 	margin-right: 3%;
@@ -445,26 +456,11 @@ body {
 		z-index: 0;
 	}
 }
-/*.boleado-startupin{
-	margin-top: 13px;
-	background-color: #E30059;
-}*/
-/*@media (max-width: 640px){
-	.boleado-startupin{
-		margin-bottom: -13%;
-	}
-}
-@media (max-width: 375px){
-	.boleado-startupin{
-		margin-bottom: -21%;
-	}
-}*/
 .conteudo-parceiros{
-	width: 100%;
-	/*height: 700px;*/
+	/*width: 100%;*/
 	min-height: 80vh;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -480,21 +476,22 @@ body {
 	.conteudo-parceiros{
 		/*min-height: 1600px;*/
 		padding: 3% 0;
-		flex-flow: column nowrap;
-		justify-content: center;
+/*		flex-flow: column nowrap;
+*/		justify-content: flex-start;
 	}
 }
-@media (max-width: 375px){
+/*@media (max-width: 375px){
 	.conteudo-parceiros{
 		padding-top: 3%;
 		flex-flow: column nowrap;
 	}
-}
+}*/
 .conteudoParceiros-titulo{
-	width: 100%;
+	/*width: 100%;*/
 	height: 45px;
 	/*margin-top:10px;*/
 	margin-top: 2rem;
+	padding-top: 1%;
 	font-family: Fengardo_Neue;
 	font-size: 36px;
 	color: #3DB5B0;
@@ -503,20 +500,21 @@ body {
 @media (max-width: 640px){
 	.conteudoParceiros-titulo{
 		font-size: 28px;
-		margin-top: 30px;
+		/*margin-top: 30px;*/
 	}
 }
 .conteudoParceiros-item{
-	width: 27%;
-	height: 109px;
+	width: 31%;
+	min-height: 115px;
+	margin: 0 1%;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+/*	flex-flow: row wrap;
+*/	justify-content: space-around;
 	align-items: center;
 }
 @media (max-width: 640px){
 	.conteudoParceiros-item{
-		width: 87%;
+		width: 95%;
 		margin: 4% 0;
 	}
 }
@@ -551,13 +549,18 @@ body {
 
 }
 .conteudoParceirosItem-descricao{
-	width: 69%;
+	width: 19vw;
 	height: 109px;
 	padding-left: 2%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+}
+@media (max-width: 640px){
+	.conteudoParceirosItem-descricao{
+		width: 53vw;
+	}
 }
 .conteudoParceirosItem-titulo{
 	width: 100%;
@@ -569,7 +572,7 @@ body {
 }
 .conteudoParceirosItem-texto{
 	width: 100%;
-	height: 45px;
+	min-height: 47px;
 	margin-top: 10px;
 	font-family: RobotoLight;
 	font-size: 14px;
@@ -577,9 +580,9 @@ body {
 	text-align: left;
 }
 .rodape{
-	width: 100%;
+	/*width: 100%;*/
 	/*height: 757px;*/
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -587,7 +590,7 @@ body {
 	background-size: cover;
 }
 .rodape-caixa{
-	width: 784px;
+	width: 60vw;
 	height: 240px;
 	background-color: #fff;
 	display: flex;
@@ -597,7 +600,7 @@ body {
 }
 @media (max-width: 640px){
 	.rodape-caixa{
-		width: 55%;
+		width: 65%;
 		min-height: 440px;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -616,7 +619,7 @@ body {
 	height: 240px;
 	padding: 4%;
 	display: flex;
-	flex-flow: column wrap;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
