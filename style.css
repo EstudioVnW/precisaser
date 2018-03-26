@@ -333,7 +333,7 @@ body {
 .conteudoAcoes-caixa{
 	width: 60vw;
 	max-width: 820px;
-	min-height: 48vh;
+	min-height: 49vh;
 	max-height: 400px;
 	padding: 0.5rem;
 	margin-right: 3%;
@@ -409,8 +409,12 @@ body {
 		z-index: 0;
 	}
 }
+
+/*Section Parceiros*/
+
 .conteudo-parceiros{
 	min-height: 80vh;
+	padding: 2% 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -516,6 +520,7 @@ body {
 	font-size: 16px;
 	color: #333;
 	text-align: left;
+	text-decoration: none;
 }
 .conteudoParceirosItem-texto{
 	width: 100%;
