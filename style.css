@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-	width: 90vw;
+	width: 95vw;
 	max-width: 1400px;
 	min-height: 75vh;
 	display: flex;
@@ -140,7 +140,7 @@ body {
 }
 .cabecalho-destaques{
 	min-height: 80vh;
-	padding: 20px 25px;
+	padding: 10% 25px;
 	background: #3DB5B0;
 	display: flex;
 	justify-content: center;
@@ -151,6 +151,7 @@ body {
 }
 .cabecalhoDestaques-titulo{
 	width: 90vw;
+	margin-bottom: 5%;
 	font-family: Fengardo_Neue;
 	font-size: 36px;
 	color: #fff;
@@ -170,7 +171,7 @@ body {
 }
 @media (max-width: 640px){
 	.cabecalhoDestaques-caixa{
-		width: 90vw;
+		width: 80vw;
 	}
 }
 .cabecalhoDestaquesCaixa-img{
@@ -200,7 +201,7 @@ body {
 .conteudo-sobre{
 	width: 100vw;
     min-height: 75vh;
-    padding: 4% 0;
+	padding: 15% 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -271,6 +272,7 @@ body {
 	content: 'Nossos Projetos';
 	width: 100vw;
 	height: 7vh;
+	padding-bottom: 5%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -302,7 +304,7 @@ body {
 }
 .conteudoAcoes-logo{
 	width: 20vw;
-	margin: 5% 0;
+	margin: 10% 0;
 }
 @media (max-width: 640px){
 	.conteudoAcoes-logo{
@@ -443,7 +445,7 @@ body {
 	min-height: 115px;
 	margin: 0 1%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
 }
 @media (max-width: 640px){
@@ -452,35 +454,42 @@ body {
 		margin: 4% 0;
 	}
 }
+.conteudoParceiros-caixaItem{
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .conteudoParceirosItem-img{
-	width: 29%;
+
+	width: 80%;
 }
 .logoPontinho{
-	width: 31%;
+	width: 71%;
 }
 .logoRecicla{
-	width: 22%;
+	width: 57%;
 }
 .logoEsperanca{
-	width: 31%;
+	width: 71%;
 }
 .logoAlimentacao{
-	width: 22%;
+	width: 62%;
 }
 .logoSopa{
-	width: 22%;
+	width: 57%;
 }
 .logoAgir{
-
+	width: 70%;
 }
 .logoMusica{
-	width: 22%;
+	width: 55%;
 }
 .logoEducap{
-	width: 31%;
+	width: 71%;
 }
 .logoOsc{
-
+	width: 70%;
 }
 .conteudoParceirosItem-descricao{
 	width: 19vw;
