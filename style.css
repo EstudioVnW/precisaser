@@ -102,7 +102,6 @@ body {
 	color: #3DB5B0;
 }
 .cabecalho-hero{
-	/*width: 100vw;*/
 	min-height: 80vh;
 	background: url("assets/fundo header.jpg") top;
 	background-size: cover;
@@ -113,22 +112,12 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-/*@media (max-width: 640px){
-	.cabecalho-hero{
-		min-height: 667px;
-	}
-}*/
 .cabecalhoHero-gradiente{
 	width: 100vw;
 	min-height: 80vh;
 	background: linear-gradient(to bottom, rgba(133,207,232,0.3), #3DB5B0);
 	position: relative;
 }
-/*@media (max-width: 640px){
-	.cabecalhoHero-gradiente{
-		min-height: 667px;
-	}
-}*/
 .cabecalhoHero-titulo{
 	width: 50vw;
 	height: 20vh;
@@ -143,11 +132,6 @@ body {
 		font-size: 26px;
 	}
 }
-/*@media (max-width: 375px){
-	.cabecalhoHero-titulo{
-		font-size: 22px;
-	}
-}*/
 .cabecalho-destaques .container{
 	flex-direction: column;
 }
@@ -155,9 +139,8 @@ body {
 	flex-flow: row wrap;
 }
 .cabecalho-destaques{
-	/*width: 100vw;*/
 	min-height: 80vh;
-	padding: 0 25px;
+	padding: 20px 25px;
 	background: #3DB5B0;
 	display: flex;
 	justify-content: center;
@@ -166,11 +149,6 @@ body {
 .container-destaques{
 	flex-direction: column;
 }
-/*@media (max-width: 640px){
-	.cabecalho-destaques{
-		align-items: center;
-	}
-}*/
 .cabecalhoDestaques-titulo{
 	width: 90vw;
 	font-family: Fengardo_Neue;
@@ -193,7 +171,6 @@ body {
 @media (max-width: 640px){
 	.cabecalhoDestaques-caixa{
 		width: 90vw;
-		/*min-height: 400px;*/
 	}
 }
 .cabecalhoDestaquesCaixa-img{
@@ -203,7 +180,6 @@ body {
 }
 .cabecalhoDestaquesCaixa-texto{
 	width: 90%;
-	/*height: 114px;*/
 	margin: 3% 0;
 	font-family: ProximaNovaRegular;
 	font-size: 24px;
@@ -211,7 +187,6 @@ body {
 	text-decoration: none;
 }
 .conteudo{
-	/*width: 100vw;*/
 	min-height: 100vh;
 }
 @media (max-width: 640px){
@@ -230,13 +205,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-/*@media (max-width: 640px){
-	.conteudo-sobre{
-		min-height: 85vh;
-		align-items: center;
-		justify-content: center;
-	}
-}*/
 .conteudoSobre-caixaLogo{
 	width: 40vw;
 	margin-right: 4%;
@@ -271,11 +239,6 @@ body {
 		width: 77vw;
 	}
 }
-/*@media (max-width: 375px){
-	.conteudoSobre-caixaTexto{
-		width: 80vw;
-	}
-}*/
 .conteudoSobre-titulo{
 	width: 50vw;
 	margin-bottom: 2%;
@@ -283,11 +246,6 @@ body {
 	font-size: 27px;
 	color: #3DB5B0;
 }
-/*@media (max-width: 640px){
-	.conteudoSobre-titulo{
-		font-size: 26px;
-	}
-}*/
 .conteudoSobre-texto{
 	width: 40vw;
 	font-family: RobotoMedium;
@@ -302,11 +260,7 @@ body {
 
 /*Section Ações*/
 
-/*.container-acoes{
-	min-height: 75vh;
-}*/
 .conteudo-acoes{
-	/*width: 100vw;*/
 	min-height: 75vh;
 	display: flex;
 	flex-direction: column;
@@ -330,15 +284,8 @@ body {
 @media (max-width: 640px){
 	.conteudo-acoes{
 		flex-direction: column;
-		/*justify-content: center;*/
 	}
 }
-/*@media (max-width: 375px){
-	.conteudo-acoes{
-		min-height: 1300px;
-		flex-direction: column;
-	}
-}*/
 .conteudoAcoes-bloco{
 	width: 30vw;
 	padding: 1%;
@@ -457,7 +404,6 @@ body {
 	}
 }
 .conteudo-parceiros{
-	/*width: 100%;*/
 	min-height: 80vh;
 	display: flex;
 	justify-content: center;
@@ -474,22 +420,12 @@ body {
 
 @media (max-width: 640px){
 	.conteudo-parceiros{
-		/*min-height: 1600px;*/
 		padding: 3% 0;
-/*		flex-flow: column nowrap;
-*/		justify-content: flex-start;
+		justify-content: flex-start;
 	}
 }
-/*@media (max-width: 375px){
-	.conteudo-parceiros{
-		padding-top: 3%;
-		flex-flow: column nowrap;
-	}
-}*/
 .conteudoParceiros-titulo{
-	/*width: 100%;*/
 	height: 45px;
-	/*margin-top:10px;*/
 	margin-top: 2rem;
 	padding-top: 1%;
 	font-family: Fengardo_Neue;
@@ -500,7 +436,6 @@ body {
 @media (max-width: 640px){
 	.conteudoParceiros-titulo{
 		font-size: 28px;
-		/*margin-top: 30px;*/
 	}
 }
 .conteudoParceiros-item{
@@ -508,8 +443,7 @@ body {
 	min-height: 115px;
 	margin: 0 1%;
 	display: flex;
-/*	flex-flow: row wrap;
-*/	justify-content: space-around;
+	justify-content: space-around;
 	align-items: center;
 }
 @media (max-width: 640px){
@@ -550,7 +484,7 @@ body {
 }
 .conteudoParceirosItem-descricao{
 	width: 19vw;
-	height: 109px;
+	min-height: 109px;
 	padding-left: 2%;
 	display: flex;
 	flex-direction: column;
@@ -579,9 +513,10 @@ body {
 	color: #333;
 	text-align: left;
 }
+
+/*Rodapé*/
+
 .rodape{
-	/*width: 100%;*/
-	/*height: 757px;*/
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
