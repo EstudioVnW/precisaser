@@ -41,7 +41,7 @@ body {
 
 .container {
 	width: 95vw;
-	max-width: 1400px;
+	max-width: 1920px;
 	min-height: 75vh;
 	display: flex;
 	align-items: center;
@@ -102,7 +102,7 @@ body {
 	color: #3DB5B0;
 }
 .cabecalho-hero{
-	min-height: 80vh;
+	min-height: 75vh;
 	background: url("assets/fundo header.jpg") top;
 	background-size: cover;
 	background-position: center top;
@@ -114,13 +114,14 @@ body {
 }
 .cabecalhoHero-gradiente{
 	width: 100vw;
-	min-height: 80vh;
+	min-height: 75vh;
 	background: linear-gradient(to bottom, rgba(133,207,232,0.3), #3DB5B0);
 	position: relative;
 }
 .cabecalhoHero-titulo{
 	width: 50vw;
 	height: 20vh;
+	margin-top: 5%;
 	font-family: ProximaNovaBlack;
 	font-size: 42px;
 	color: #fff;
@@ -128,7 +129,7 @@ body {
 }
 @media (max-width: 640px){
 	.cabecalhoHero-titulo{
-		width: 80vw;
+		width: 65vw;
 		font-size: 26px;
 	}
 }
@@ -333,7 +334,7 @@ body {
 .conteudoAcoes-caixa{
 	width: 60vw;
 	max-width: 820px;
-	min-height: 49vh;
+	min-height: 51vh;
 	max-height: 400px;
 	padding: 0.5rem;
 	margin-right: 3%;
@@ -539,7 +540,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url("assets/fundo footer.svg");
+	background: url("assets/fundo footer.png");
 	background-size: cover;
 }
 .rodape-caixa{
