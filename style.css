@@ -159,7 +159,7 @@ body {
 }
 .cabecalhoDestaques-caixa{
 	width: 20vw;
-	min-height: 57vh;
+	min-height: 360px;
 	margin: 1%;
 	background-color: #fff;
 	border-radius: 10px;
