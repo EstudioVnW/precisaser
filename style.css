@@ -41,7 +41,7 @@ body {
 
 .container {
 	width: 95vw;
-	max-width: 1400px;
+	max-width: 1920px;
 	min-height: 75vh;
 	display: flex;
 	align-items: center;
@@ -540,7 +540,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url("assets/fundo footer.svg");
+	background: url("assets/fundo footer.png");
 	background-size: cover;
 }
 .rodape-caixa{
